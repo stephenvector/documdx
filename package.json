@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test": "tsc --noEmit index.ts"
+  },
+  "dependencies": {
+    "typescript": "latest"
+  }
+}
