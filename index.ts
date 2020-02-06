@@ -4,6 +4,10 @@ import set from "lodash/lib/set"
 class Store {
   private listenerFunctions: (path: string, value: any) => void
   private value: {[key: string]: any}
+  
+  constructor(initialValue: [key: string]: any = {}) {
+    this.value = initialValue;
+  }
 
   registerListener(path: string, func: (path: string, value: any) => void) {
     if (!Array.isArray(this.value[path])) {
