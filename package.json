@@ -3,6 +3,7 @@
     "test": "tsc --noEmit index.ts"
   },
   "dependencies": {
+    "lodash": "latest",
     "typescript": "latest"
   }
 }
