@@ -1,9 +1,13 @@
 {
   "scripts": {
+    "prettier": "prettier --check index.ts",
     "test": "tsc --noEmit index.ts"
   },
   "dependencies": {
-    "lodash": "latest",
-    "typescript": "latest"
+    "lodash": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "prettier": "latest"
   }
 }
