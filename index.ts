@@ -5,7 +5,7 @@ class Store {
   private listenerFunctions: (path: string, value: any) => void
   private value: {[key: string]: any}
   
-  constructor(initialValue: [key: string]: any = {}) {
+  constructor(initialValue: {[key: string]: any} = {}) {
     this.value = initialValue;
   }
 
