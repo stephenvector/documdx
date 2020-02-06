@@ -31,7 +31,7 @@ class Store {
 
 const store = new Store();
 
-function a(eventName) {
+function a(path, newValue) {
   console.log(newValue);
 }
 
