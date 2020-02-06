@@ -1,5 +1,5 @@
-import get from "lodash/lib/get"
-import set from "lodash/lib/set"
+import get from "lodash/get"
+import set from "lodash/set"
 
 class Store {
   private listenerFunctions: (path: string, value: any) => void
@@ -36,3 +36,9 @@ function a(eventName) {
 }
 
 store.registerListener('a', a);
+
+store.setValue('a', 'not a');
+
+store.setValue('a', 'a');
+
+store.setValue('a', 'not a');
